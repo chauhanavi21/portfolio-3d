@@ -1,0 +1,474 @@
+{
+  "sales-dashboard": {
+    "cover": {
+      "src": "/projects/sales-dashboard/cover.webp",
+      "thumb": "/projects/sales-dashboard/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/sales-dashboard/shot-1.webp",
+        "w": 1400,
+        "h": 1147,
+        "portrait": false
+      },
+      {
+        "src": "/projects/sales-dashboard/shot-2.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/sales-dashboard/shot-3.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/sales-dashboard/shot-4.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/sales-dashboard/shot-5.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/sales-dashboard/shot-6.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/sales-dashboard/shot-7.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/sales-dashboard/shot-8.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      }
+    ],
+    "phone": {
+      "src": "/projects/sales-dashboard/phone.webp",
+      "w": 390,
+      "h": 844,
+      "portrait": true
+    }
+  },
+  "reliefops": {
+    "cover": {
+      "src": "/projects/reliefops/cover.webp",
+      "thumb": "/projects/reliefops/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/reliefops/shot-1.webp",
+        "w": 1400,
+        "h": 972,
+        "portrait": false
+      },
+      {
+        "src": "/projects/reliefops/shot-2.webp",
+        "w": 1400,
+        "h": 972,
+        "portrait": false
+      }
+    ],
+    "phone": {
+      "src": "/projects/reliefops/phone.webp",
+      "w": 390,
+      "h": 844,
+      "portrait": true
+    }
+  },
+  "repairdesk": {
+    "cover": {
+      "src": "/projects/repairdesk/cover.webp",
+      "thumb": "/projects/repairdesk/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/repairdesk/shot-1.webp",
+        "w": 1400,
+        "h": 972,
+        "portrait": false
+      },
+      {
+        "src": "/projects/repairdesk/shot-2.webp",
+        "w": 1400,
+        "h": 972,
+        "portrait": false
+      },
+      {
+        "src": "/projects/repairdesk/shot-3.webp",
+        "w": 1400,
+        "h": 972,
+        "portrait": false
+      },
+      {
+        "src": "/projects/repairdesk/shot-4.webp",
+        "w": 1400,
+        "h": 972,
+        "portrait": false
+      }
+    ],
+    "phone": {
+      "src": "/projects/repairdesk/phone.webp",
+      "w": 390,
+      "h": 844,
+      "portrait": true
+    }
+  },
+  "threads": {
+    "cover": {
+      "src": "/projects/threads/cover.webp",
+      "thumb": "/projects/threads/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/threads/shot-1.webp",
+        "w": 1200,
+        "h": 750,
+        "portrait": false
+      },
+      {
+        "src": "/projects/threads/shot-2.webp",
+        "w": 1200,
+        "h": 750,
+        "portrait": false
+      },
+      {
+        "src": "/projects/threads/shot-3.webp",
+        "w": 1200,
+        "h": 750,
+        "portrait": false
+      },
+      {
+        "src": "/projects/threads/shot-4.webp",
+        "w": 1200,
+        "h": 750,
+        "portrait": false
+      }
+    ],
+    "phone": {
+      "src": "/projects/threads/phone.webp",
+      "w": 480,
+      "h": 1039,
+      "portrait": true
+    }
+  },
+  "bloom": {
+    "cover": {
+      "src": "/projects/bloom/cover.webp",
+      "thumb": "/projects/bloom/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/bloom/shot-1.webp",
+        "w": 1400,
+        "h": 1120,
+        "portrait": false
+      },
+      {
+        "src": "/projects/bloom/shot-2.webp",
+        "w": 1400,
+        "h": 1120,
+        "portrait": false
+      },
+      {
+        "src": "/projects/bloom/shot-3.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/bloom/shot-4.webp",
+        "w": 820,
+        "h": 656,
+        "portrait": false
+      }
+    ],
+    "phone": {
+      "src": "/projects/bloom/phone.webp",
+      "w": 390,
+      "h": 844,
+      "portrait": true
+    }
+  },
+  "aurora-atlas": {
+    "cover": {
+      "src": "/projects/aurora-atlas/cover.webp",
+      "thumb": "/projects/aurora-atlas/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/aurora-atlas/shot-1.webp",
+        "w": 1400,
+        "h": 1120,
+        "portrait": false
+      },
+      {
+        "src": "/projects/aurora-atlas/shot-2.webp",
+        "w": 1400,
+        "h": 1069,
+        "portrait": false
+      },
+      {
+        "src": "/projects/aurora-atlas/shot-3.webp",
+        "w": 390,
+        "h": 844,
+        "portrait": true
+      }
+    ],
+    "phone": {
+      "src": "/projects/aurora-atlas/phone.webp",
+      "w": 390,
+      "h": 844,
+      "portrait": true
+    }
+  },
+  "saas-platform": {
+    "cover": {
+      "src": "/projects/saas-platform/cover.webp",
+      "thumb": "/projects/saas-platform/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/saas-platform/shot-1.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/saas-platform/shot-2.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/saas-platform/shot-3.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/saas-platform/shot-4.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      }
+    ],
+    "phone": {
+      "src": "/projects/saas-platform/phone.webp",
+      "w": 700,
+      "h": 1515,
+      "portrait": true
+    }
+  },
+  "company-map": {
+    "cover": {
+      "src": "/projects/company-map/cover.webp",
+      "thumb": "/projects/company-map/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/company-map/shot-1.webp",
+        "w": 780,
+        "h": 1688,
+        "portrait": true
+      },
+      {
+        "src": "/projects/company-map/shot-2.webp",
+        "w": 780,
+        "h": 1688,
+        "portrait": true
+      },
+      {
+        "src": "/projects/company-map/shot-3.webp",
+        "w": 780,
+        "h": 1688,
+        "portrait": true
+      },
+      {
+        "src": "/projects/company-map/shot-4.webp",
+        "w": 780,
+        "h": 1688,
+        "portrait": true
+      },
+      {
+        "src": "/projects/company-map/shot-5.webp",
+        "w": 780,
+        "h": 1688,
+        "portrait": true
+      },
+      {
+        "src": "/projects/company-map/shot-6.webp",
+        "w": 780,
+        "h": 1688,
+        "portrait": true
+      },
+      {
+        "src": "/projects/company-map/shot-7.webp",
+        "w": 780,
+        "h": 1688,
+        "portrait": true
+      },
+      {
+        "src": "/projects/company-map/shot-8.webp",
+        "w": 780,
+        "h": 1688,
+        "portrait": true
+      }
+    ],
+    "phone": {
+      "src": "/projects/company-map/phone.webp",
+      "w": 700,
+      "h": 1515,
+      "portrait": true
+    }
+  },
+  "halo": {
+    "cover": {
+      "src": "/projects/halo/cover.webp",
+      "thumb": "/projects/halo/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/halo/shot-1.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/halo/shot-2.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/halo/shot-3.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/halo/shot-4.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      }
+    ],
+    "phone": {
+      "src": "/projects/halo/phone.webp",
+      "w": 700,
+      "h": 1515,
+      "portrait": true
+    }
+  },
+  "clinic": {
+    "cover": {
+      "src": "/projects/clinic/cover.webp",
+      "thumb": "/projects/clinic/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [],
+    "phone": null
+  },
+  "agentforge": {
+    "cover": {
+      "src": "/projects/agentforge/cover.webp",
+      "thumb": "/projects/agentforge/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [],
+    "phone": null
+  },
+  "inkcomplete": {
+    "cover": {
+      "src": "/projects/inkcomplete/cover.webp",
+      "thumb": "/projects/inkcomplete/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [],
+    "phone": null
+  },
+  "portfolio-2d": {
+    "cover": {
+      "src": "/projects/portfolio-2d/cover.webp",
+      "thumb": "/projects/portfolio-2d/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/portfolio-2d/shot-1.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/portfolio-2d/shot-2.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/portfolio-2d/shot-3.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/portfolio-2d/shot-4.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/portfolio-2d/shot-5.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/portfolio-2d/shot-6.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      }
+    ],
+    "phone": {
+      "src": "/projects/portfolio-2d/phone.webp",
+      "w": 390,
+      "h": 844,
+      "portrait": true
+    }
+  }
+}
