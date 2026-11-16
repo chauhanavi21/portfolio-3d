@@ -295,39 +295,39 @@
     "shots": [
       {
         "src": "/projects/company-map/shot-1.webp",
-        "w": 780,
-        "h": 1688,
-        "portrait": true
+        "w": 1400,
+        "h": 875,
+        "portrait": false
       },
       {
         "src": "/projects/company-map/shot-2.webp",
-        "w": 780,
-        "h": 1688,
-        "portrait": true
+        "w": 1400,
+        "h": 875,
+        "portrait": false
       },
       {
         "src": "/projects/company-map/shot-3.webp",
-        "w": 780,
-        "h": 1688,
-        "portrait": true
+        "w": 1400,
+        "h": 875,
+        "portrait": false
       },
       {
         "src": "/projects/company-map/shot-4.webp",
-        "w": 780,
-        "h": 1688,
-        "portrait": true
+        "w": 1400,
+        "h": 875,
+        "portrait": false
       },
       {
         "src": "/projects/company-map/shot-5.webp",
-        "w": 780,
-        "h": 1688,
-        "portrait": true
+        "w": 1400,
+        "h": 875,
+        "portrait": false
       },
       {
         "src": "/projects/company-map/shot-6.webp",
-        "w": 780,
-        "h": 1688,
-        "portrait": true
+        "w": 1400,
+        "h": 875,
+        "portrait": false
       },
       {
         "src": "/projects/company-map/shot-7.webp",
@@ -340,13 +340,19 @@
         "w": 780,
         "h": 1688,
         "portrait": true
+      },
+      {
+        "src": "/projects/company-map/shot-9.webp",
+        "w": 780,
+        "h": 1688,
+        "portrait": true
       }
     ],
     "phone": {
       "src": "/projects/company-map/phone.webp",
       "w": 700,
-      "h": 1515,
-      "portrait": true
+      "h": 438,
+      "portrait": false
     }
   },
   "halo": {
@@ -417,6 +423,133 @@
       "h": 1000
     },
     "shots": [],
+    "phone": null
+  },
+  "compliance-tracker": {
+    "cover": {
+      "src": "/projects/compliance-tracker/cover.webp",
+      "thumb": "/projects/compliance-tracker/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/compliance-tracker/shot-1.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/compliance-tracker/shot-2.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/compliance-tracker/shot-3.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/compliance-tracker/shot-4.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      },
+      {
+        "src": "/projects/compliance-tracker/shot-5.webp",
+        "w": 1400,
+        "h": 875,
+        "portrait": false
+      }
+    ],
+    "phone": {
+      "src": "/projects/compliance-tracker/phone.webp",
+      "w": 700,
+      "h": 1515,
+      "portrait": true
+    }
+  },
+  "signallab": {
+    "cover": {
+      "src": "/projects/signallab/cover.webp",
+      "thumb": "/projects/signallab/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [],
+    "phone": null
+  },
+  "tenantledger": {
+    "cover": {
+      "src": "/projects/tenantledger/cover.webp",
+      "thumb": "/projects/tenantledger/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [],
+    "phone": null
+  },
+  "parcelguard": {
+    "cover": {
+      "src": "/projects/parcelguard/cover.webp",
+      "thumb": "/projects/parcelguard/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [],
+    "phone": null
+  },
+  "supplylens": {
+    "cover": {
+      "src": "/projects/supplylens/cover.webp",
+      "thumb": "/projects/supplylens/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [],
+    "phone": null
+  },
+  "quoteline": {
+    "cover": {
+      "src": "/projects/quoteline/cover.webp",
+      "thumb": "/projects/quoteline/thumb.webp",
+      "w": 1600,
+      "h": 1000
+    },
+    "shots": [
+      {
+        "src": "/projects/quoteline/shot-1.webp",
+        "w": 1280,
+        "h": 720,
+        "portrait": false
+      },
+      {
+        "src": "/projects/quoteline/shot-2.webp",
+        "w": 1280,
+        "h": 720,
+        "portrait": false
+      },
+      {
+        "src": "/projects/quoteline/shot-3.webp",
+        "w": 1280,
+        "h": 720,
+        "portrait": false
+      },
+      {
+        "src": "/projects/quoteline/shot-4.webp",
+        "w": 1280,
+        "h": 720,
+        "portrait": false
+      },
+      {
+        "src": "/projects/quoteline/shot-5.webp",
+        "w": 1280,
+        "h": 720,
+        "portrait": false
+      }
+    ],
     "phone": null
   },
   "portfolio-2d": {
