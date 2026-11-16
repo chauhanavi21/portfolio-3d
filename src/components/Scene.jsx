@@ -8,7 +8,9 @@ import { useStore } from '../store';
 
 const CARD_W = 2.5;
 const CARD_H = CARD_W * 0.625;
-const R = 6.4;
+// radius grows with the number of cards so the gap between neighbours stays constant (chord = card width + gap)
+const GAP = 0.9;
+const R = Math.max(6.4, ((CARD_W + GAP) * projects.length) / (Math.PI * 2));
 
 const reducedMotion = () => typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
