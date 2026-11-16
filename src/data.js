@@ -5,7 +5,7 @@ export const profile = {
   role: 'Software engineer',
   tagline: 'I build full-stack products, AI agents and cloud systems.',
   intro:
-    'Thirteen projects, from a multi-tenant SaaS platform and emergency-relief dispatch to a handwriting model that runs in the browser. Drag the ring, pick one, and read how it works.',
+    'Nineteen projects, from a multi-tenant SaaS platform and emergency-relief dispatch to a handwriting model that runs in the browser. Drag the ring, pick one, and read how it works.',
   email: 'chauhanavi2311@gmail.com',
   github: 'https://github.com/chauhanavi21',
   linkedin: 'https://www.linkedin.com/in/developeravichauhan',
@@ -250,27 +250,28 @@ const raw = [
   {
     slug: 'company-map',
     title: 'The Company Map',
-    kicker: 'An AI-agent platform, explained',
+    kicker: 'An AI-agent workspace for a small business',
     year: '2026',
     cats: ['AI', '3D & Motion'],
     accent: '#ff5c7a',
     summary:
-      'A whole company on one page: 7 departments, 34 teams and 37 jobs, each one an agent with a written job description. Includes a scripted, captioned walkthrough and a phone-sized morning brief.',
+      'A working app for running a small business with AI agents, plus a visual pitch: a zoomable map of 7 departments, 34 teams and 37 agents, a captioned 67-second walkthrough and a phone morning brief.',
     story:
-      'Instead of describing AI agents, I show a roofing contractor’s company running on them. Click any job to see what it reads, what it writes and what it is allowed to do. The walkthrough is driven frame by frame so it can be recorded perfectly.',
+      'It has two sides. The Work side is a real app with leads, invoices with PDFs, quotes, tickets and a bank reconciler. The Show side is the sales pitch for other owners. The agents are fenced in: there is a kill switch and a dry-run mode, outreach is drafted but never sent, and the model may only raise a ticket’s urgency, never lower it.',
     does: [
-      'A company map you can zoom into, department by department, with search and an agent drawer per job',
-      'A timed walkthrough with live captions across sales, operations, office and intelligence',
-      'A phone lock-screen “morning brief” and an email, Slack and push digest',
+      'Seven working agents with permission tiers, a kill switch, dry-run mode and a full audit log',
+      'Lead finder on OpenStreetMap, CSV import, an email finder that only reads a business’s own site, and a first-message drafter that never sends',
+      'Model-written weekly brief that is thrown away if it contains any number not in the facts it was given',
     ],
     built: [
-      'React 18, TypeScript, Zustand and Framer Motion',
-      'A deterministic timeline engine, so any second can be rendered on demand',
-      'Vitest tests for the data, search, timeline and flow engines. All demo numbers are labelled illustrative.',
+      'React 18, TypeScript and Zustand in the browser; Node 24 with its built-in SQLite on the server, loopback only',
+      'A local Granite model through Ollama, so no business data leaves the computer',
+      'Backups with a restore test, Lighthouse and frame-rate measurements, and browser checks in real Chrome',
     ],
-    stack: ['React', 'TypeScript', 'Zustand', 'Framer Motion', 'Vitest'],
-    proof: [{ v: '7', l: 'departments' }, { v: '34', l: 'teams' }, { v: '37', l: 'agents' }],
+    stack: ['React', 'TypeScript', 'Node 24', 'SQLite', 'Ollama', 'Vitest'],
+    proof: [{ v: '~576', l: 'test cases' }, { v: '37', l: 'agent roles mapped' }, { v: '93–100', l: 'Lighthouse mobile' }],
     repo: null,
+    note: 'Test count is from the test files; the demo numbers on the map are labelled illustrative. The walkthrough runs at about 33 fps with the CPU slowed 4x, which is a known gap.',
   },
   {
     slug: 'agentforge',
@@ -324,6 +325,162 @@ const raw = [
     repo: null,
   },
   {
+    slug: 'compliance-tracker',
+    title: 'Compliance Tracker',
+    kicker: 'Licences, insurance and safety cards',
+    year: '2026',
+    cats: ['Full-stack', 'Java'],
+    accent: '#facc15',
+    summary:
+      'Know which electricians can legally work today, and prove it to an inspector. It tracks licences, insurance and safety cards, warns before they expire, and refuses to assign a worker to a job they are not cleared for.',
+    story:
+      'The check that matters is the date of the job, not today’s date. A licence that is valid now but lapses mid-job is refused, with the reason shown. Grant Okafor’s licence runs out five days before the kitchen rewire starts, so assigning him fails and says exactly why. Renewing it fills the new expiry in and keeps the old record as history.',
+    does: [
+      'Dashboard of who is compliant, expiring or expired, and which required documents are missing',
+      'Assignment gate that checks a worker against the job’s dates and stores every refusal with its reasons',
+      'Alerts at 90, 30 and 7 days and on expiry, with no duplicates; CSV and PDF reports; read-only auditor links that hide contact details',
+    ],
+    built: [
+      'Java 21, Spring Boot, Spring Security, Spring JDBC and Flyway, with H2 and a PostgreSQL profile',
+      'Angular 22 built into the same JAR as the server',
+      'Every query is scoped by company; uploads are checked by their content, not their filename',
+    ],
+    stack: ['Java 21', 'Spring Boot', 'Angular 22', 'Flyway', 'H2 / PostgreSQL'],
+    proof: [{ v: '119', l: 'Java tests' }, { v: '71', l: 'Angular tests' }, { v: '19', l: 'real-browser checks' }],
+    repo: null,
+    note: 'The PostgreSQL profile is written but has not been run against a real PostgreSQL server.',
+  },
+  {
+    slug: 'signallab',
+    title: 'SignalLab',
+    kicker: 'SLO alert replay studio',
+    year: '2026',
+    cats: ['Full-stack'],
+    accent: '#4ade80',
+    summary:
+      'Compare the noise, firing duration and detection delay of three alert policies on the same traffic. Inspired by public Google SRE guidance.',
+    story:
+      'A shorter firing time can come with a longer detection delay, and the only honest way to see that is to replay the same traffic through each policy. I also replayed 26,978 real NASA web requests through it. That check validates the import and a zero-error baseline only, and the page says it cannot prove detection delay or false-positive rates.',
+    does: [
+      'Replay a seeded 12-hour, three-service scenario and compare five-minute and one-hour burn',
+      'Change the SLO or traffic gate and re-run the same seed',
+      'Import your own trace as CSV and export the results as JSON',
+    ],
+    built: [
+      'Python with no runtime packages, credentials or build step',
+      'The public demo runs the same Python in a browser worker, with temporary per-tab state',
+      'CI on Windows and Linux with Chromium, Firefox and WebKit, plus automated accessibility checks',
+    ],
+    stack: ['Python', 'SQLite', 'JavaScript', 'Playwright', 'GitHub Actions'],
+    proof: [{ v: '21', l: 'tests' }, { v: '26,978', l: 'real requests replayed' }, { v: '0', l: 'runtime packages' }],
+    repo: 'https://github.com/chauhanavi21/signallab',
+    note: 'An independent portfolio project inspired by public guidance. It has no connection to Google.',
+  },
+  {
+    slug: 'tenantledger',
+    title: 'TenantLedger',
+    kicker: 'Multi-tenant double-entry ledger',
+    year: '2026',
+    cats: ['Full-stack'],
+    accent: '#38bdf8',
+    summary:
+      'A finance workspace for two fictional organisations. Every transfer commits two integer-cent postings and a hash-linked audit record in one transaction. Inspired by public Microsoft multitenant guidance.',
+    story:
+      'Money is stored as whole cents, never floats, and a transfer either writes both sides and its audit record or writes nothing. Each audit entry hashes the one before it, so editing history breaks the chain. I replayed 200 real retail lines as constructed internal transfers: totals were conserved, the audit chain stayed valid, and the other tenant’s accounts stayed hidden.',
+    does: [
+      'Tenant identity decides which accounts a user can read or move money between',
+      'Hash-linked audit trail that can be verified',
+      'Import and replay historical sale lines as transfers',
+    ],
+    built: [
+      'Python and SQLite with no runtime packages',
+      'Public demo runs the same logic in a browser worker, with temporary per-tab state',
+      'CI across three browser engines, with separate accessibility and mobile checks',
+    ],
+    stack: ['Python', 'SQLite', 'JavaScript', 'Playwright', 'GitHub Actions'],
+    proof: [{ v: '25', l: 'tests' }, { v: '200', l: 'real lines replayed' }, { v: '2', l: 'tenants isolated' }],
+    repo: 'https://github.com/chauhanavi21/tenantledger',
+    note: 'The browser demo’s sign-in only illustrates the flow; server-side authentication is in the local app. Independent project, no connection to Microsoft.',
+  },
+  {
+    slug: 'parcelguard',
+    title: 'ParcelGuard',
+    kicker: 'Order reliability lab',
+    year: '2026',
+    cats: ['Full-stack'],
+    accent: '#fb923c',
+    summary:
+      'Reserve inventory once, replay a client request, lose a delivery acknowledgement after the consumer commits, and prove recovery makes exactly one fulfilment. Inspired by the AWS Builders’ Library.',
+    story:
+      'Send the same idempotency key twice and the response replays without changing stock. Change the quantity under the same key and the server returns a conflict. In the historical replay, 200 order lines produced 200 replays and 10 changed-intent conflicts, with 20 lost acknowledgements injected on purpose and recovered with a single effect each.',
+    does: [
+      'Idempotent reservations with replay and conflict detection',
+      'Transactional outbox delivery and lost-acknowledgement recovery',
+      'Compare retry strategies on paired synthetic workloads',
+    ],
+    built: [
+      'Python and SQLite with no runtime packages',
+      'Public demo runs the same logic in a browser worker, with temporary per-tab state',
+      'CI across three browser engines and a historical-data replay check',
+    ],
+    stack: ['Python', 'SQLite', 'JavaScript', 'Playwright', 'GitHub Actions'],
+    proof: [{ v: '25', l: 'tests' }, { v: '200', l: 'order lines replayed' }, { v: '20', l: 'lost acks recovered' }],
+    repo: 'https://github.com/chauhanavi21/parcelguard',
+    note: 'Duplicates and lost acknowledgements are injected, not observed in the source data. Independent project, no connection to Amazon.',
+  },
+  {
+    slug: 'supplylens',
+    title: 'SupplyLens',
+    kicker: 'Sourcing decision studio',
+    year: '2026',
+    cats: ['AI', 'Full-stack'],
+    accent: '#2dd4bf',
+    summary:
+      'Turns a procurement case into three comparable supplier allocations, a reproducible disruption experiment and an evidence-backed decision memo that shows cost, concentration, emissions and delivery risk together.',
+    story:
+      'The default case has four suppliers, three materials and twelve lanes. The policy-constrained plan cuts planned landed spend by $184,000 (2.71%), but it also raises emissions by 442 tCO₂e and slightly worsens the 5th-percentile delivery, so the tool shows the trade-off instead of hiding it. These are simulated results on fictional data, not realised savings.',
+    does: [
+      'Linear-programming optimisation with demand, capacity, concentration, lead-time and emissions rules, checked independently for feasibility',
+      'Seeded and regional disruption experiments with paired Monte Carlo confidence intervals',
+      'Validated JSON import, CSV and JSON export, and exact replay from the command line',
+    ],
+    built: [
+      'Python, FastAPI and SciPy’s HiGHS solver',
+      'React front end built into the app',
+      'A 24-case predeclared study with a separate evaluation seed, and a memo generated from the saved results',
+    ],
+    stack: ['Python', 'FastAPI', 'SciPy', 'React', 'pytest'],
+    proof: [{ v: '42', l: 'tests' }, { v: '24', l: 'predeclared cases' }, { v: '12', l: 'sourcing lanes' }],
+    repo: 'https://github.com/chauhanavi21/supplylens',
+    note: 'Independent project using no company or client data, and not affiliated with McKinsey. It has no hosted demo and runs locally.',
+  },
+  {
+    slug: 'quoteline',
+    title: 'Quoteline',
+    kicker: 'Order book and market-making lab',
+    year: '2026',
+    cats: ['Full-stack'],
+    accent: '#f472b6',
+    summary:
+      'A limit order book, a market-making simulator, an options pricer with a fitted volatility surface, a delta-hedging simulator and an ETF arbitrage engine, written in OCaml with an interactive browser view.',
+    story:
+      'Everything runs on simulated data, and it makes no claim about real-market profit. The README lists what went wrong along the way: a simulator that took quadratic time, one that produced no adverse selection, and an order book whose cancels slowed down on deep books until I made them O(log n), about 9.7 times faster. I broke the code on purpose to confirm each test would fail.',
+    does: [
+      'Price-time priority matching with limit, market, IOC and cancel orders',
+      'Avellaneda-Stoikov market maker with profit split into spread, adverse selection and inventory',
+      'Black-Scholes, implied volatility, an SVI surface with an arbitrage check, VaR, and a replayable order book in the browser',
+    ],
+    built: [
+      'OCaml with dune; the order book is an immutable structure so replays and forks are simple',
+      'Python re-implementations used as independent cross-checks',
+      'Plain HTML, CSS and JavaScript view with no framework, and a CI-guarded benchmark',
+    ],
+    stack: ['OCaml', 'Python', 'JavaScript', 'dune', 'GitHub Actions'],
+    proof: [{ v: '73', l: 'test cases' }, { v: '9.7×', l: 'faster after the fix' }, { v: '73,547', l: 'trades cross-checked' }],
+    repo: 'https://github.com/chauhanavi21/quoteline',
+    note: 'Synthetic data only; the strategy’s edge is a property of my simulator.',
+  },
+  {
     slug: 'portfolio-2d',
     title: 'Portfolio (2D)',
     kicker: 'The first version of this site',
@@ -354,7 +511,7 @@ export const projects = raw.map((p, i) => ({
 
 export const stats = [
   { v: projects.length, l: 'Projects' },
-  { v: 419 + 282 + 68 + 31, l: 'Automated tests' },
+  { v: 419 + 282 + 68 + 31 + 119 + 71 + 21 + 25 + 25 + 42 + 73, l: 'Automated tests' },
   { v: 5, l: 'Languages' },
 ];
 
