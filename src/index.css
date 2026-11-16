@@ -240,12 +240,12 @@ button { font: inherit; color: inherit; cursor: pointer; background: none; borde
 .note { margin: 18px 0 0; font-size: 13px; color: var(--muted); }
 .cs-links { display: flex; gap: 10px; flex-wrap: wrap; margin: 34px 0 0; }
 .cs-links .cta { background: var(--a); color: #000000; }
-.cs-nav { margin-top: 70px; padding-top: 28px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.cs-nav { margin-top: 70px; padding-top: 28px; border-top: 1px solid var(--line); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 14px; }
 .cs-nav button { text-align: left; padding: 18px 20px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255, 255, 255, 0.03); transition: border-color 0.3s, transform 0.4s var(--ease); }
 .cs-nav button:hover { border-color: var(--a); transform: translateY(-3px); }
 .cs-nav button:last-child { text-align: right; }
 .cs-nav small { display: block; font: 500 11px var(--display); letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
-.cs-nav b { font: 700 clamp(18px, 2.4vw, 28px) var(--display); letter-spacing: -0.02em; }
+.cs-nav b { font: 700 clamp(16px, 2.4vw, 28px) var(--display); letter-spacing: -0.02em; overflow-wrap: anywhere; }
 @media (max-width: 760px) {
   .cols { grid-template-columns: 1fr; }
   .gallery { grid-template-columns: 1fr; }
