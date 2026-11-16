@@ -2,7 +2,7 @@
 
 An interactive portfolio where the projects live on a rotating 3D ring. Drag it, flick it, or use the arrow keys; click the front card and a case study grows out of it with the story, what it does, how it is built, measured numbers and screenshots.
 
-Thirteen projects: SaaS and clinic back-ends in .NET, Java relief and repair systems, three storefronts, a Three.js product page, an AI-agent platform, a from-scratch agent, a browser handwriting model and the earlier 2D portfolio.
+Nineteen projects: SaaS, clinic and compliance back-ends in .NET and Java, relief and repair systems, three storefronts, a Three.js product page, an AI-agent workspace, a from-scratch agent, a browser handwriting model, three reliability labs and a sourcing optimiser in Python, an OCaml trading-engine lab and the earlier 2D portfolio.
 
 ## Run it
 
@@ -21,7 +21,7 @@ Deep links work: `/#/p/halo` opens the HALO case study directly.
 
 | Piece | What it does |
 | --- | --- |
-| `src/components/Scene.jsx` | React Three Fiber scene: ring of image cards, floor glow, torus knot and wireframe, stars, offline studio lighting. |
+| `src/components/Scene.jsx` | React Three Fiber scene: ring of image cards (its radius grows with the number of projects so spacing stays even), floor glow, torus knot and wireframe, stars, offline studio lighting. |
 | `src/lib/ring.js` | Ring physics shared between the DOM and WebGL: drag, flick momentum, snap to the nearest card, idle spin. Plain mutable state, not React state, because it changes every frame. |
 | `src/components/Hero.jsx` | Pointer, touch, wheel and keyboard controls. A horizontal swipe spins the ring; a vertical swipe still scrolls the page. Taps are resolved with a raycast. |
 | `src/components/CaseStudy.jsx` | Shared-element transition: the dialog grows from the card's screen rectangle and shrinks back. Escape, the browser Back button and focus return all work. |
@@ -48,7 +48,7 @@ Deep links work: `/#/p/halo` opens the HALO case study directly.
 
 ## Honest notes about the images
 
-Most images are the screenshots already stored in each project. Four projects had none, so I captured them from the running apps: the Company Map, HALO, InkComplete and SaasPlatform. SaasPlatform was captured against a throwaway database with a fictional company. Clinic Management and AgentForge have no UI, so their covers are real terminal output (a passing test run and a real company run), rendered as images and labelled as such on the page.
+Most images are the screenshots already stored in each project. Some projects had none, so I captured them from the running apps: the Company Map, Compliance Tracker, HALO, InkComplete and SaasPlatform. Each was captured against a throwaway database with fictional demo data, never the real one. Clinic Management and AgentForge have no UI, so their covers are real terminal output (a passing test run and a real company run), rendered as images and labelled as such on the page.
 
 ## Left out on purpose
 
